@@ -18,7 +18,7 @@ will have access to it.
 
 ### install git
 
-First, install and configure [git](git.html) on your local machine.
+First, install and configure [git](git.md) on your local machine.
 
 Online: add your real name to your github profile,
 to make sure I know who you are!
