@@ -39,6 +39,10 @@ Check to see if it's already installed:
 
 [Here](http://happygitwithr.com/install-git.html) is a another resource.
 
+I do **not** recommend GitHub Desktop. It does not help learn git,
+and makes it too easy to "commit" things we don't really mean to.
+That caused trouble for some students in this course in the past.
+
 ## configure git
 
 run `git config -l` to list the current configuration for git.
@@ -89,7 +93,22 @@ Lots of details on the process [here](http://happygitwithr.com/ssh-keys.html) to
 
         $ eval "$(ssh-agent -s)"
         Agent pid 12584
+
+    If you have macOS Sierra 10.12.2 or later,
+  open and modify your `~/.ssh/config` file with this:
+
+        Host *
+         AddKeysToAgent yes
+         UseKeychain yes
+         IdentityFile ~/.ssh/id_rsa
+
+    next, run this for Linux users:
+
         $ ssh-add ~/.ssh/id_rsa
+
+    or add the option `-K` for Mac Users:
+
+        $ ssh-add -K ~/.ssh/id_rsa
 
 3. tell github about your new key:
   run `cat ~/.ssh/id_rsa.pub` to view your public key,
