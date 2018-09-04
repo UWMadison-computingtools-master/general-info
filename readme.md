@@ -2,7 +2,10 @@ This information is for the UW-Madison course Stat 679:
 [Computing tools for data analytics](http://cecileane.github.io/computingtools)
 
 - instructions to [get and submit homework](#instructions-to-get-homework-data)
-- general grading [rubric](rubric.md).
+- general grading [rubric](rubric.md)
+- mark template: download [.csv](marktemplate.csv) template
+
+---
 
 ## instructions to get homework data
 
