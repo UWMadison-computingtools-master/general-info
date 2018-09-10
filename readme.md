@@ -74,6 +74,7 @@ These steps are to broadcast your work to github, to submit it there.
 - save all your homework files locally
 - commit the files that you want to submit:
   run `git add filename` for every new file `filename` that you created.
+  run `git commit -m"commit message here"`
 - run `git status` to double check
 - push the new commit(s) to your github repo
 - go online to visit your repo on github, refresh the browser and make sure
