@@ -74,9 +74,24 @@ These steps are to broadcast your work to github, to submit it there.
 - save all your homework files locally
 - commit the files that you want to submit:
   run `git add filename` for every new file `filename` that you created.
-  run `git commit -m"commit message here"`
-- run `git status` to double check
-- push the new commit(s) to your github repo
+  run `git commit -m "commit message here"`
+
+   example: you created a directory `scripts/` in which you created a file
+   `normalizeFileNames.sh`; you also modified the file `readme.md` that was
+   already existing (and already tracked by git). Do this to commit
+   your new file and your changes:
+
+   ```bash
+   git status # gives useful info: read it!
+   git add scripts/normalizeFileNames.sh
+   git add readme.md
+   git status # read! you should see that your work is ready to be committed
+   git commit -m "doc in readme, and script to normalize file names"
+   git show   # just to check your latest commit. "q" to quit
+   ```
+
+- run `git status` to double check: should be all clean
+- push the new commit(s) to your github repo with `git push`
 - go online to visit your repo on github, refresh the browser and make sure
   it's all good: click on the files, on the last commit,
   visit the network page (in "Graphs", then hover on the dots)
@@ -103,9 +118,9 @@ To submit your work: open an issue, link to the latest commit, and tag me and th
   * include comments to help me understand what you did
   * use markdown syntax (this is very important: see grading rubric)
   * click on "preview" to preview your issue (check the link and markdown syntax)
-- submit "new issue". I will receive an email automatically because you tagged me.
+- submit "new issue". Anyone you tagged will receive an email automatically.
 
-I will check your work online,
+We will check your work online,
 will run your code to make sure it works,
 then provide feedback on the "issue" if needed,
 and close the issue when it's all done.
@@ -118,11 +133,9 @@ on GitHub Classroom for group assignments.
 ## get help on your work
 
 You may also open an issue to get help. In this case, do as above but
-choose a different name for your issue.
+choose a different name for your issue. Tag the TA and/or instructors,
+otherwise they may not be notified.
 
-If I do not reply fast enough, I suggest that you share your repo with
-the class (github user: "UWMadison-computingtools-2018") and that you tag
-someone else from the class, to get help from / discuss your issue with
-someone else. Then use the github issue feature for your discussion.
-Your goal is to learn these computing tools, so make sure you do the work
-yourself, even if you ask for help from someone else.
+For group assignments, you can use github issues to communicate with your
+group members. This is a great way to get help from / discuss roadblocks with
+someone else in your group. This is used heavily in the workplace.
