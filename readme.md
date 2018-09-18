@@ -76,14 +76,15 @@ These steps are to broadcast your work to github, to submit it there.
   run `git add filename` for every new file `filename` that you created.
   run `git commit -m"commit message here"`
 - run `git status` to double check
-- push the new commit(s) to your github repo
+- push the new commit(s) to your github repo:
+  run `git push`
 - go online to visit your repo on github, refresh the browser and make sure
   it's all good: click on the files, on the last commit,
   visit the network page (in "Graphs", then hover on the dots)
 
 After these steps, your work will be visible to the instructor and TA.
 
-To submit your work: open an issue, link to the latest commit, and tag me and the TA:
+To submit your work: open an issue, link to the latest commit, and tag me and the TA (@coraallencoleman):
 
 - find the SHA of the latest commit.
   On github, above the file list, look for "latest commit" followed by 7 numbers/letters.
