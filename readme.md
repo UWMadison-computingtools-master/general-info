@@ -74,8 +74,22 @@ These steps are to broadcast your work to github, to submit it there.
 - save all your homework files locally
 - commit the files that you want to submit:
   run `git add filename` for every new file `filename` that you created.
-  run `git commit -m"commit message here"`
-- run `git status` to double check
+  run `git commit -m "commit message here"`
+
+   example: you created a directory `scripts/` in which you created a file
+   `normalizeFileNames.sh`; you also modified the file `readme.md` that was
+   already existing (and already tracked by git). Do this to commit
+   your new file and your changes:
+
+   ```bash
+   git status # gives useful info: read it!
+   git add scripts/normalizeFileNames.sh
+   git add readme.md
+   git status # read! you should see that your work is ready to be committed
+   git commit -m "doc in readme, and script to normalize file names"
+   git show   # just to check your latest commit. "q" to quit
+   ```
+- run `git status` to double check: should be all clean
 - push the new commit(s) to your github repo:
   run `git push`
 - go online to visit your repo on github, refresh the browser and make sure
